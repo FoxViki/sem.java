@@ -3,9 +3,7 @@
 
 import java.time.LocalDateTime;
 
-public class task1 {
-
-     */
+public class sem1z1 {
 
     public static void main(String[] args) {
         System.out.println("Hello world");    
