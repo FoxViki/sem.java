@@ -22,43 +22,39 @@ package seminary.dz1;
 
 public class dz1z3 {
 
-    class Calculator {
+class Calculator {
     public int calculate(char op, int a, int b) {
-      // Введите свое решение ниже
-        int result = 0;
-        if (op == '+'){
-            int rezult = a + b;
-            return rezult;
+        // Введите свое решение ниже
+    int res = 0; 
+        switch(op) { 
+            case '+': res = a + b; 
+              break; 
+            case '-': res = a - b; 
+              break; 
+            case '*': res = a*b; 
+              break; 
+            case '/': res = a / b; 
+              break;
+            default: 
+              System.out.printf("Некорректный оператор: 'оператор'."); 
+              break; 
         }
-        else if (op == '-'){
-            int rezult = a - b;
-            return rezult;
-        }
-        else if (op == '*'){
-            int rezult = a * b;
-            return rezult;
-        }
-        else if (op == '/'){
-            int rezult = a / b;
-            return rezult;
-        }
-        else
-            return "Некорректный оператор: 'оператор'";
+      return res;
     }
 }
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class Printer{ 
-    public static void main(String[] args) { 
+class Printer {
+    public static void main(String[] args) {
         int a = 0;
         char op = ' ';
         int b = 0;
 
         if (args.length == 0) {
-        // При отправке кода на Выполнение, вы можете варьировать эти параметры
-            a = 3;
-            op = '+';
-            b = 7;
+            // При отправке кода на Выполнение, вы можете варьировать эти параметры
+            a = 174;
+            op = '*';
+            b = 0;
         } else {
             a = Integer.parseInt(args[0]);
             op = args[1].charAt(0);
@@ -70,7 +66,6 @@ public class Printer{
         System.out.println(result);
     }
 }
-    
 }
 
 
@@ -85,6 +80,10 @@ public class Printer{
 
 
 
+
+
+
+/*
 class Calculator {
     public int calculate(char op, int a, int b) {
       // Введите свое решение ниже
@@ -135,3 +134,4 @@ public class Printer{
         System.out.println(result);
     }
 }
+*/ */
